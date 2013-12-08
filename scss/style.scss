@@ -8,6 +8,7 @@
 
 #slider {
 	position: relative;
+
 	ul {
 		list-style: none;
 
@@ -15,12 +16,16 @@
 			display: inline;
 			width: 100%;
 
+			&.absolute {
+				top: 0;
+				position: absolute;
+			}
+
 			img {
 				width: 100%;
 			}
 		}
 	}
-
 
 	#slider-controls {
 		position: absolute;
@@ -42,9 +47,4 @@
 			margin-right: 10px;
 		}
 	}
-}
-
-.absolute {
-	top: 0;
-	position: absolute;
 }
