@@ -1,5 +1,23 @@
 $(document).ready(function(){
 
+	/**
+
+		Enkel slider med jQuery
+		=======================
+
+		jQuery metoder som används:
+			removeClass() 	- Tar bort klass från objekt
+			show() 			- Visa objekt
+			addClass() 		- Lägger till klass till objekt
+			fadeOut() 		- Tonar ut objekt
+			click() 		- Vid klick på objekt
+			hover() 		- Vid muspekare över objekt
+
+		Övriga metoder som används
+			setTimeout() 	- Metod som körs efter bestämt antal millisekunder
+
+	**/
+
 	$("#slider ul > li:gt(0)").hide(); // Dölj alla list objekt förutom den första
 
 	var slider_speed 	= 4000; 	// Antal millisekunder som används av funktioner timer()
