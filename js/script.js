@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	console.log('bdfh');
-
 	$("#slider ul > li:gt(0)").hide(); // Dölj alla list objekt förutom den första
 
 	var slider_speed 	= 4000; 	// Antal millisekunder som används av funktioner timer()
@@ -25,7 +23,6 @@ $(document).ready(function(){
 
 	function next_slide() {
 		if( i === amount_images ) { // Om listobjektet är det sista, visa det första
-			console.log('banan');
 			fade_out_slide();
 			i = 1;
 			show_slide();
@@ -42,7 +39,6 @@ $(document).ready(function(){
 			i = amount_images;
 			show_slide();
 		} else {
-			console.log('päron');
 			fade_out_slide();
 			i--;
 			show_slide();
