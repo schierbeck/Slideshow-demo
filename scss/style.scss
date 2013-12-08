@@ -1,0 +1,50 @@
+@import "reset";
+
+#wrapper {
+  margin: 0 auto; // auto for centering
+  max-width: 800px;
+  width: 100%;
+}
+
+#slider {
+	position: relative;
+	ul {
+		list-style: none;
+
+		li {
+			display: inline;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+
+	#slider-controls {
+		position: absolute;
+		height: 60px;
+		padding: 10px;
+		z-index: 999999999;
+		bottom: 0;
+
+		#prev, #next {
+			border-radius: 40px;
+			cursor: pointer;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			float: left;
+			height: 40px;
+			width: 40px;
+			background: white;
+			margin-right: 10px;
+		}
+	}
+}
+
+.absolute {
+	top: 0;
+	position: absolute;
+}
