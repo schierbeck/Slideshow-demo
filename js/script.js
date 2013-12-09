@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	$("#slider ul > li:gt(0)").hide(); // Dölj alla list objekt förutom den första
 
-	var slider_speed 	= 4000; 	// Antal millisekunder som används av funktioner timer()
+	var slider_speed 	= 4000; 	// Antal millisekunder som används av funktionen timer()
 	var fade_speed 		= 1000; 	// Antal millisekunder slides tonas ut på
 	var hovering 		= false; 	// Om man hovrar över slidern kommer denna sättas till true
 	var clicking 		= false; 	//
@@ -63,7 +63,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$('#prev, #next').click(function(){ // Vid klick på föregående och nästa-knapparna
+	$('#prev, #next').click(function() { // Vid klick på föregående och nästa-knapparna
 		if( clicking === false ) { // Om senaste klick var minst lika många millisekunder sen, som fade_speed är satt till
 			if( $(this).attr('id') == 'prev') { // Om klick på var på föregående-knappen
 				prev_slide();
@@ -79,9 +79,9 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#slider').hover(function(){ // Vid hover över slidern
+	$('#slider').hover(function() { // Vid hover över slidern
         hovering = true;
-    },function(){ // När man slutar hovra över slidern
+    },function() { // När man slutar hovra över slidern
         hovering = false;
     });
 
@@ -96,5 +96,4 @@ $(document).ready(function(){
 
 	timer(); // Startar funktionen timer(), den kommer sedan starta om sig själv efter antal angivna millisekunder
 
-// End of jQuery
-});
+}); // End of jQuery
