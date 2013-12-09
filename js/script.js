@@ -34,9 +34,12 @@ $(document).ready(function(){
 	}
 
 	function fade_out_slide() { // Funktion för att dölja slide
+		clicking = true; // Genom att sätta true, går det inte att klicka på knapparna när slidern fadear
 		$('#list-' + i)
 			.addClass('absolute') // Lägger till klassen .absolute till objektet, dvs nu är den position:absolute
-			.fadeOut(fade_speed); // Fadea ut objektet i antalet angivna millisekunder
+			.fadeOut(fade_speed, function(){
+				clicking = false; // När fadeOut() är klar kan man klicka på knapparna igen
+			}); // Fadea ut objektet i antalet angivna millisekunder
 	}
 
 	function next_slide() {
@@ -63,8 +66,8 @@ $(document).ready(function(){
 		}
 	}
 
-	$('#prev, #next').click(function() { // Vid klick på föregående och nästa-knapparna
-		if( clicking === false ) { // Om senaste klick var minst lika många millisekunder sen, som fade_speed är satt till
+	$('#prev, #next').on('touchstart click', function(e){
+	    if( clicking === false ) { // Om senaste klick var minst lika många millisekunder sen, som fade_speed är satt till
 			if( $(this).attr('id') == 'prev') { // Om klick på var på föregående-knappen
 				prev_slide();
 			} else { // Om klick var på nästa-knappen
