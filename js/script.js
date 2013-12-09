@@ -66,7 +66,7 @@ $(document).ready(function(){
 		}
 	}
 
-	$('#prev, #next').on('touchstart click', function(e){
+	$('#prev, #next').on('touchstart click', function(){
 	    if( clicking === false ) { // Om senaste klick var minst lika många millisekunder sen, som fade_speed är satt till
 			if( $(this).attr('id') == 'prev') { // Om klick på var på föregående-knappen
 				prev_slide();
