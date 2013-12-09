@@ -1,8 +1,8 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
+Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\000039}}
@@ -107,45 +107,43 @@ hr {
 input, select {
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\000034}}
 #wrapper {
   margin: 0 auto;
   max-width: 800px;
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000310}}
 #slider {
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000313}}
   #slider ul {
     list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000316}}
     #slider ul li {
-      display: inline;
       width: 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000319}}
       #slider ul li.absolute {
-        top: 0;
-        position: absolute; }
+        position: absolute;
+        top: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000324}}
       #slider ul li img {
-        width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000330}}
+        height: auto;
+        max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000331}}
   #slider #slider-controls {
-    position: absolute;
+    bottom: 0;
     height: 60px;
     padding: 10px;
-    z-index: 999999999;
-    bottom: 0; }
+    position: absolute; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000337}}
     #slider #slider-controls #prev, #slider #slider-controls #next {
-      border-radius: 40px;
-      cursor: pointer;
-      text-align: center;
-      line-height: 40px;
-      font-size: 20px;
-      float: left;
-      height: 40px;
-      width: 40px;
       background: white;
-      margin-right: 10px; }
+      cursor: pointer;
+      float: left;
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      margin-right: 10px;
+      text-align: center;
+      width: 40px; }

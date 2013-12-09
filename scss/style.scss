@@ -1,50 +1,49 @@
+@charset "UTF-8"; // För att kunna använda tecken som "åäö"
 @import "reset";
 
 #wrapper {
-  margin: 0 auto; // auto for centering
+  margin: 0 auto; // auto för centrering
   max-width: 800px;
   width: 100%;
 }
 
 #slider {
-	position: relative;
+	position: relative; // För att styra positionering av #slider-controls
 
 	ul {
 		list-style: none;
 
 		li {
-			display: inline;
 			width: 100%;
 
 			&.absolute {
-				top: 0;
 				position: absolute;
+				top: 0;
 			}
 
 			img {
-				width: 100%;
+				height: auto; // Gör bilderna responsiva
+				max-width: 100%; // Gör bilderna responsiva
 			}
 		}
 	}
 
 	#slider-controls {
-		position: absolute;
+		bottom: 0;
 		height: 60px;
 		padding: 10px;
-		z-index: 999999999;
-		bottom: 0;
+		position: absolute;
 
 		#prev, #next {
-			border-radius: 40px;
-			cursor: pointer;
-			text-align: center;
-			line-height: 40px;
-			font-size: 20px;
-			float: left;
-			height: 40px;
-			width: 40px;
 			background: white;
+			cursor: pointer;
+			float: left;
+			font-size: 20px;
+			height: 40px;
+			line-height: 40px;
 			margin-right: 10px;
+			text-align: center;
+			width: 40px;
 		}
 	}
 }
