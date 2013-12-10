@@ -5,6 +5,8 @@ $(document).ready(function(){
 		Enkel slider med jQuery
 		=======================
 
+		På github: https://github.com/schierbeck/Slideshow-demo
+
 		jQuery metoder som används:
 			removeClass() 	- Tar bort klass från objekt
 			show() 			- Visa objekt
@@ -12,6 +14,7 @@ $(document).ready(function(){
 			fadeOut() 		- Tonar ut objekt
 			click() 		- Vid klick på objekt
 			hover() 		- Vid muspekare över objekt
+			attr()			- Kom åt värdet av ett arrtribut på objektet
 
 		Övriga metoder som används
 			setTimeout() 	- Metod som körs efter bestämt antal millisekunder
@@ -20,12 +23,12 @@ $(document).ready(function(){
 
 	$("#slider ul > li:gt(0)").hide(); // Dölj alla list objekt förutom den första
 
-	var slider_speed 	= 4000; 	// Antal millisekunder som används av funktionen timer()
-	var fade_speed 		= 1000; 	// Antal millisekunder slides tonas ut på
-	var hovering 		= false; 	// Om man hovrar över slidern kommer denna sättas till true
-	var clicking 		= false; 	//
-	var amount_images 	= $('#slider ul li').length; // Antal objekt som ska slidea
-	var i = 1;
+	var slider_speed 			= 4000; 	// Antal millisekunder som används av funktionen timer()
+	var fade_speed 				= 1000; 	// Antal millisekunder slides tonas ut på
+	var hovering 				= false; 	// Om man hovrar över slidern kommer denna sättas till true
+	var clicking 				= false; 	// Kommer hålla reda på när man klickar
+	var amount_list_objects 	= $('#slider ul li').length; // Antal objekt som ska slidea
+	var i 						= 1;
 
 	function show_slide() { // Funktion för att visa slide
 		$('#list-' + i)
@@ -43,7 +46,7 @@ $(document).ready(function(){
 	}
 
 	function next_slide() {
-		if( i === amount_images ) { // Om listobjektet är det sista, visa det första
+		if( i === amount_list_objects ) { // Om listobjektet är det sista, visa det första
 			fade_out_slide();
 			i = 1;
 			show_slide();
@@ -57,7 +60,7 @@ $(document).ready(function(){
 	function prev_slide() {
 		if( i === 1 ) { // Om listobjektet är det första, visa det sista
 			fade_out_slide();
-			i = amount_images;
+			i = amount_list_objects;
 			show_slide();
 		} else {
 			fade_out_slide();
