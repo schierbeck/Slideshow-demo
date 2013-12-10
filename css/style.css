@@ -5,14 +5,12 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\000039}}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000327}}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -33,30 +31,24 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000337}}
 body {
   line-height: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000342}}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000346}}
 nav ul {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000350}}
 blockquote, q {
   quotes: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000355}}
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000360}}
 a {
   margin: 0;
   padding: 0;
@@ -65,36 +57,30 @@ a {
   background: transparent; }
 
 /* change colours to suit your needs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000369}}
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none; }
 
 /* change colours to suit your needs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000376}}
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000383}}
 del {
   text-decoration: line-through; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000387}}
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000392}}
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
 /* change border colour to suit your needs */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\0000398}}
 hr {
   display: block;
   height: 1px;
@@ -103,40 +89,31 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/_reset\.scss}line{font-family:\00003107}}
 input, select {
   vertical-align: middle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\000034}}
 #wrapper {
   margin: 0 auto;
   max-width: 800px;
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000310}}
 #slider {
   position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000313}}
   #slider ul {
     list-style: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000316}}
     #slider ul li {
       width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000319}}
       #slider ul li.absolute {
         position: absolute;
         top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000324}}
       #slider ul li img {
         height: auto;
         max-width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000331}}
   #slider #slider-controls {
     bottom: 0;
     height: 60px;
     padding: 10px;
     position: absolute; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/slideshow_demo\/scss\/style\.scss}line{font-family:\0000337}}
     #slider #slider-controls #prev, #slider #slider-controls #next {
       background: white;
       cursor: pointer;
